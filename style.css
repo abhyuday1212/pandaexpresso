@@ -1,0 +1,362 @@
+/* Css reset */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+
+
+/* css variables */
+:root {
+      --navbar-height: 59px;
+
+}
+
+.navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      top: 0px;
+      left: 0px;
+
+
+}
+
+.navbar {
+      display: flex;
+      align-items: center;
+}
+
+/* Navigation Bar Logo and image */
+.logo {
+      margin: -6px -2px;
+}
+
+.logo img {
+      height: 61px;
+      margin: -20px 5px;
+      border-radius: 40px;
+
+}
+
+.navbar {
+      position: relative;
+
+}
+
+.navbar ul {
+      display: flex;
+      font-family: 'Poppins', sans-serif;
+}
+
+
+
+.navbar ul li {
+
+      list-style: none;
+      font-size: 0.85rem;
+
+}
+
+.navbar ul li a {
+
+      color: white;
+      display: block;
+      padding: 20px 40px;
+      border: 1px;
+      text-decoration: none;
+
+}
+
+.navbar ul li a:hover {
+      color: black;
+      background-color: white;
+      border-radius: 80px;
+}
+
+/* home Section */
+#home {
+      margin: 40px -39px;
+      padding: 18px 220px;
+      height: 95%;
+      width: 55%;
+      grid-template-columns: auto;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+
+
+}
+
+.container1 {
+      content: "";
+      background: url('images/bg1.jpg') no-repeat center center/cover;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      /* top: 0px;
+      left: 0px; */
+}
+
+.form-group input {
+      font-family: 'Bree Serif', serif;
+      font-size: 1rem;
+      text-align: center;
+      display: block;
+      width: 283px;
+      padding: 2px;
+      border: 0px solid grey;
+      margin: 16px auto;
+      border-radius: 582px;
+}
+
+#btn1 {
+      display: block;
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.9rem;
+      text-align: center;
+      width: 283px;
+      padding: 2px;
+      border: 0px solid grey;
+      margin: 0px -36px;
+      border-radius: 60px;
+      margin-top: 240px;
+      margin-left: -284px;
+
+}
+
+#btn1:hover {
+      color: aliceblue;
+      background-color: rgb(93, 86, 86);
+
+
+}
+/* --------------------------------------------------------- */
+/* menu */
+
+
+.container2 {
+      content: "";
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+
+
+}
+.h-secondary {
+      font-size: 3.8rem;
+      padding: 12px;
+}
+
+.center {
+      text-align: center;
+
+
+}
+
+.bgvideo {
+      position: relative;
+      margin: 50px 0px;
+      height: 80%;
+      z-index: -1;
+      opacity: 0.96;
+
+}
+
+@media(min-aspect-ratio:16/9) {
+      .bgvideo {
+            width: 100%;
+            height: fit-content;
+      }
+}
+
+@media(max-aspect-ratio:16/9) {
+      .bgvideo {
+            width: 100%;
+            height: fit-content;
+      }
+}
+.service-margin{
+      margin:   -870px 18px;
+      
+}
+#services {
+      flex-direction: column;
+      flex-wrap: wrap;
+}
+
+#services .box {
+
+
+      width: 370px;
+      height: 550px;
+      padding: 15px 50px;
+      margin: 180px 120px;
+      border-radius: 28px;
+      background: #f2f2f2;
+      margin-bottom: 32px;
+      display: inline-block;
+      border: 2px solid black;
+}
+
+@media (max-width: 768px) {
+      #services .box {
+            /* reduce the width and height of the boxes for smaller screens */
+            width: 300px;
+            height: 369px;
+      }
+}
+
+#services .box:hover {
+      /* add a box shadow and a scale transform to create a 3D effect */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+}
+
+#services .box {
+      /* add an animation name and duration */
+      animation: bounce 1s;
+}
+
+/* define the bounce animation */
+@keyframes bounce {
+
+      0%,
+      100% {
+            /* start and end with the original position */
+            transform: translateY(0);
+      }
+
+      50% {
+            /* move the box up by 20px at the middle of the animation */
+            transform: translateY(-20px);
+      }
+
+}
+
+
+#services .box img {
+      height: 160px;
+      width: 200px;
+      margin: auto;
+      display: block;
+      text-decoration: none;
+      background-color: #f2f2f2;
+
+
+}
+
+.price {
+      text-align: center;
+}
+
+.boxcontent {
+      color: black;
+      text-align: center;
+      font-size: 2.5rem;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+}
+
+.menu-heading {
+      color: black;
+      display: flex;
+      height: 67px;
+      justify-content: center;
+      margin: -18px 0px;
+      text-align: center;
+      font-size: 3.5rem;
+      font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------------------------------- */
+
+/* reviews */
+
+#reviews-section {
+      position: relative;
+
+      padding: 50px 0;
+      margin: 150px 0px;
+}
+
+.heading-reviews {
+      margin: 0px 0px;
+      text-align: center;
+      color: black;
+      font-size: 3.8rem;
+      font-family: 'Poppins', sans-serif;
+}
+
+#reviews {
+      margin-top: 20px;
+      height: 60%;
+      background-color: #f2f2f2;
+}
+
+.reviews-item {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      padding: 10px;
+      margin: 10px;
+}
+
+.reviews-item img {
+      height: 380px;
+      width: 280px;
+      margin: 0px 9px;
+      padding: 0px 0px;
+      border: 2px solid brown;
+      border-radius: 28px;
+      position: relative;
+}
+
+/* .review-text{
+      color: black;
+      font-size: 2rem;
+      position: absolute;
+      top: 1800px;
+      left: 16px;
+      z-index: 1;
+} */
+
+@media screen and (max-width: 768px) {
+      .reviews-item {
+            flex: 1 1 100%;
+            max-width: none;
+      }
+}
+
+/* --------------------- */
+/* contact us */
+.contact {
+
+      z-index: -1;
+      background-color:rgb(243, 202, 202) ;
+      margin: -200px 0px;
+      padding: 0px 0px ;
+      height: 55%;
+      
+
+}
+.contact-heading{
+      font-size: 3.5rem;
+      text-align: center;
+      color: rgb(10, 10, 10);
+}
+footer{
+      text-align: center;
+      background-color: black;
+      color: white;
+      margin: 200px 0px;
+      padding: 0px 0px;
+      z-index: 1;
+}
